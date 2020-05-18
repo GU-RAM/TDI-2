@@ -1,0 +1,274 @@
+.global-footer-place {
+    height: 100px;
+}
+
+.footer {
+    height: 100px;
+    position: relative;
+}
+
+.footer .footer-top {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer .footer-top .footer-blog,
+.footer .footer-top .footer-enciclopedia {
+    display: flex;
+    width: 50%;
+    margin-right: 20px; 
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer .footer-top .footer-enciclopedia {
+    margin-right: 0;
+}
+
+.footer .footer-top .footer-blog .footer-blog-link {
+    background: #3a5dab;
+    color: #ffffff;
+    flex-grow: 1;
+    padding: 20px 0;
+}
+
+.footer .footer-top .footer-enciclopedia .footer-enciclopedia-link {
+    font-size: 14px;
+    background: #ed1b35;
+    flex-grow: 1;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.footer .footer-top .footer-enciclopedia .footer-enciclopedia-link:hover {
+    color: #3a5dab;
+    box-shadow: 1px 1px 3px 2px #aeb3ba;
+}
+
+.footer .footer-top .footer-blog .footer-blog-link:hover {
+    color: #000000;
+    box-shadow: 1px 1px 3px 2px #d0d0d0;
+}
+
+.footer .footer-top .footer-partnewrs {
+    float: right;
+    font-size: 13px;
+    width: 473px;
+    padding-top: 40px;
+    color: #a7a7a7;
+}
+
+.footer .footer-top .footer-partnewrs span {
+    padding-top: 58px;
+    display: inline-block;
+}
+
+.footer .footer-top .footer-partnewrs p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer .footer-top .footer-partnewrs img {
+    margin-left: 10px;
+    vertical-align: top;
+    cursor: pointer;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    height: 29px;
+}
+
+.footer .footer-top .footer-partnewrs img.first {
+    margin-left: 123px;
+}
+
+.footer .footer-top .footer-partnewrs img:hover {
+    opacity: 0.7;
+}
+
+.footer .footer-bottom {
+    height: 168px;
+    border-top: 1px solid #5e6166;
+}
+
+.footer .footer-bottom .footer-left {
+    /* float: left; */
+    /* width: 600px; */
+    padding-top: 11px;
+}
+
+/* .footer .footer-bottom .footer-left .footer-menu {
+    width: 490px;
+    max-height: 145px;
+    overflow: hidden;
+} */
+
+.footer .footer-bottom .footer-left .footer-menu li {
+    float: left;
+    width: 50%;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.footer .footer-bottom .footer-left .footer-menu li a {
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    padding-bottom: 5px;
+    display: block;
+}
+
+.footer .footer-bottom .footer-left .footer-menu li:nth-child(1) a:hover,
+.footer .footer-bottom .footer-left .footer-menu li:nth-child(4) a:hover,
+.footer .footer-bottom .footer-left .footer-menu li:nth-child(7) a:hover {
+    color: #ffd105;
+    font-weight: 600;
+}
+
+.footer .footer-bottom .footer-left .footer-menu li:nth-child(2) a:hover,
+.footer .footer-bottom .footer-left .footer-menu li:nth-child(5) a:hover,
+.footer .footer-bottom .footer-left .footer-menu li:nth-child(8) a:hover {
+    color: #ed1b35;
+    font-weight: 600;
+}
+
+.footer .footer-bottom .footer-left .footer-menu li:nth-child(3) a:hover,
+.footer .footer-bottom .footer-left .footer-menu li:nth-child(6) a:hover,
+.footer .footer-bottom .footer-left .footer-menu li:nth-child(9) a:hover {
+    color: #3a5dab;
+    font-weight: 600;
+}
+
+.footer .footer-bottom .footer-left .footer-partner-logo {
+    margin-top: 10px;
+    position: relative;
+}
+
+.footer .footer-bottom .footer-left .footer-partner-logo a {
+    color: #121212;
+}
+
+.footer .footer-bottom .footer-left .footer-partner-logo a span {
+    font-size: 12px;
+    position: absolute;
+    left: 65px;
+    top: 0;
+    max-width: 320px;
+    line-height: 20px;
+}
+
+.footer .footer-bottom .footer-left .footer-partner-logo a span:lang(ka) {
+    line-height: 17px;
+    font-size: 14px;
+}
+
+.footer .footer-bottom .footer-left .footer-partner-logo a img {
+    vertical-align: top;
+}
+
+.footer .footer-bottom .footer-left .footer-partner-logo a:hover {
+    color: #121212;
+    opacity: 0.7;
+}
+
+.footer .footer-bottom .fb-chanel {
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+}
+
+.footer .footer-bottom .fb-chanel img {
+    height: 26px;
+}
+
+.footer .footer-bottom .fb-chanel:hover {
+    opacity: 0.4;
+}
+
+.footer .footer-bottom .footer-right {
+    float: right;
+    width: 262px;
+    text-align: right;
+    padding-top: 45px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.footer .footer-bottom .footer-right .created {
+    padding-top: 20px;
+}
+
+.footer .footer-bottom .footer-right .copyright {
+    padding-top: 10px;
+    display: inline-block;
+    font-size: 12px;
+}
+
+body.i18n-ka .footer .footer-top .footer-partnewrs p {
+    font-size: 16px;
+}
+
+@media (min-width: 760px) {
+    .footer .footer-bottom .footer-left .footer-partner-logo a span  {
+        font-size: 14px;
+    }
+
+    .footer-bottom .row {
+        padding: 25px;
+    }
+}
+
+@media (min-width: 768px) {
+    footer .footer-top .footer-blog {
+        width: 218px;
+    }
+
+    .footer .footer-top .footer-blog .footer-blog-link,
+    .footer .footer-top .footer-enciclopedia .footer-enciclopedia-link  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        -moz-border-radius: 500px;
+        -webkit-border-radius: 500px;
+        border-radius: 500px;
+        width: 125px;
+        height: 125px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+
+
+    .footer .footer-top .footer-enciclopedia .footer-enciclopedia-link {
+        font-size: 14px;
+    }
+
+}
+
+@media (min-width: 996px) {
+    .global-footer-place,
+    .footer {
+        height: 140px;
+    }
+
+
+    .footer .footer-top .footer-blog .footer-blog-link {
+        width: 218px;
+        height: 218px;
+        font-size: 28px;
+    }
+    
+    .footer .footer-top .footer-enciclopedia .footer-enciclopedia-link {
+        width: 218px;
+        height: 218px;
+        font-size: 20px;
+    }
+}

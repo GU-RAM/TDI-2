@@ -1,0 +1,239 @@
+/* front multimedia */
+
+.front-multimedia {
+    padding: 40px 0 20px;
+}
+
+.front-multimedia-grid-wrapper img {
+    width: 100%;
+}
+
+.front-multimedia-grid-wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(7 auto);
+    gap: 20px;
+    overflow: hidden;
+}
+
+.front-multimedia-item-3 {
+    grid-row: 6/7;    
+}
+
+@media (min-width: 490px) {
+    .front-multimedia {
+        padding: 40px 25px 20px;
+    }
+
+    .front-multimedia-grid-wrapper {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(4 auto);
+        gap: 20px;
+    }
+
+    .front-multimedia-item-2 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .front-multimedia-item-3 {
+        grid-column: 2/3;
+        grid-row: 1/3;
+    }
+
+    .front-multimedia-item-4 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .front-multimedia-item-5 {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    .front-multimedia-item-6 {
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+}
+
+@media (min-width: 750px) {
+
+    .front-multimedia-grid-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto auto;
+    }
+
+    .front-multimedia-item-2 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .front-multimedia-item-3 {
+        grid-column: 2/3;
+        grid-row: 1/3;
+    }
+
+    .front-multimedia-item-4 {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .front-multimedia-item-5 {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    .front-multimedia-item-6 {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+}
+
+@media (min-width: 1024px) {
+    .front-multimedia-grid-wrapper {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto auto;
+      }
+    
+    .front-multimedia-item-5 {
+        grid-column: 4/5;
+        grid-row: 1/3;
+    }
+    
+    .front-multimedia-item-6 {
+        grid-column: 3/5;
+        grid-row: 2/3;
+    }
+}
+
+
+
+/* .news-listing,
+.statements-listing,
+.tolerance-video-nav,
+.blog-row {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+@media (min-width: 510px) {
+    .news-listing,
+    .statements-listing,
+    .tolerance-video-nav,
+    .blog-row {
+        grid-template-columns: repeat(2, 50%);
+    }
+}
+
+
+@media (min-width: 760px) {
+    .news-listing,
+    .statements-listing,
+    .tolerance-video-nav,
+    .blog-row {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 990px) {
+    .news-listing,
+    .statements-listing,
+    .tolerance-video-nav {x
+        grid-template-columns: repeat(4, 1fr);
+    }
+} 
+
+@media (min-width: 1200px) {
+    .tolerance-video-nav {
+        gap: 20px;
+    }
+} */
+
+.news-listing,
+.statements-listing,
+.tolerance-video-nav,
+.blog-row {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 324;
+    gap: 10px;
+    justify-content: center;
+    overflow: hidden;
+} 
+
+.blog-row a {
+    position: relative;
+}
+
+.blog-row .pub-item{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.blog-row .pub-item img{
+    height: 100%;
+    width: 270px;
+    object-fit: cover;
+}
+
+.title {
+    text-align: center;
+}
+
+.publication-page .container .pub-item {
+    border: none;
+}
+
+
+@media (min-width: 560px) {
+    .blog-row .pub-item{
+        display: block;
+        overflow: hidden;
+    }
+
+    .blog-row .pub-item img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .news-listing,
+    .statements-listing,
+    .tolerance-video-nav,
+    .blog-row {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+
+@media (min-width: 760px) {
+    .title {
+        text-align: left;
+    }
+
+    .news-listing,
+    .statements-listing,
+    .tolerance-video-nav,
+    .blog-row {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 990px) {
+    .news-listing,
+    .statements-listing,
+    .tolerance-video-nav,
+    .blog-row {
+        grid-template-columns: repeat(4, 1fr);
+    }
+} 
+
+@media (min-width: 1200px) {
+    .tolerance-video-nav {
+        gap: 20px;
+    }
+}
