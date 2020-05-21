@@ -346,7 +346,7 @@ body.i18n-ka .header .header-right .menu ul.main-menu li>a {
 }
 
 
-@media(min-width: 996px) {
+@media(min-width: 992px) {
     #toggler, 
     .hamburger {
         display: none;
