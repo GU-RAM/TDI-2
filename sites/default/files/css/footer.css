@@ -193,7 +193,7 @@
     width: 262px;
     text-align: right;
     padding-top: 45px;
-    font-size: 13px;
+    font-size: 14px;
     text-transform: uppercase;
 }
 
@@ -204,7 +204,7 @@
 .footer .footer-bottom .footer-right .copyright {
     padding-top: 10px;
     display: inline-block;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 body.i18n-ka .footer .footer-top .footer-partnewrs p {

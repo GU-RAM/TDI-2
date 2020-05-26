@@ -8590,7 +8590,7 @@
             //.first().click();
 
             $int.find(".int-slider").slick({
-                slidesToShow: 2,
+                slidesToShow: 1,
                 slidesToScroll: 1,
                 adaptiveHeight: true,
                 variableWidth: true,
@@ -8610,9 +8610,8 @@
                     {
                         breakpoint: 970,
                         settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 3,
-                            arrows: false
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
                         }
                     }
                 ]
@@ -8629,7 +8628,7 @@
         let Slider4MaxSlidesChange;
         let width = $(window).width();
 
-        if (width < 760) {
+        if (width < 750) {
             Slider4MinSlidesChange = 1;
             Slider4MaxSlidesChange = 1;
         } else if (width < 996) {
@@ -8648,6 +8647,7 @@
             moveSlides: 1,
             slideMargin: 10,
             pager: 0,
+            controls: true,
             responsive: true
         });
 
@@ -8674,6 +8674,35 @@
             moveSlides: 1,
             slideMargin: 10,
             pager: 0,
+            responsive: true
+        });
+
+        let minSlidesChangeSlider6, maxSlidesChangeSilder6, controlerBoolean;
+        controlerBoolean = false;
+
+        if (width < 576) {
+            minSlidesChangeSlider6 = 1;
+            maxSlidesChangeSilder6 = 1;
+            controlerBoolean = true;
+        } else if (width < 745) {
+            minSlidesChangeSlider6 = 2;
+            maxSlidesChangeSilder6 = 2;
+        } else if (width < 977) {
+            minSlidesChangeSlider6 = 3;
+            maxSlidesChangeSilder6 = 3;
+        } else {
+            minSlidesChangeSlider6 = 4;
+            maxSlidesChangeSilder6 = 4;
+        }
+
+        $('.slider6').bxSlider({
+            slideWidth: 300,
+            minSlides: minSlidesChangeSlider6,
+            maxSlides: maxSlidesChangeSilder6,
+            moveSlides: 1,
+            slideMargin: 10,
+            pager: 0,
+            controls: controlerBoolean,
             responsive: true
         });
 
