@@ -8590,7 +8590,7 @@
             //.first().click();
 
             $int.find(".int-slider").slick({
-                slidesToShow: 1,
+                slidesToShow: 2,
                 slidesToScroll: 1,
                 adaptiveHeight: true,
                 variableWidth: true,
@@ -8604,13 +8604,13 @@
                         breakpoint: 1200,
                         settings: {
                             slidesToShow: 2,
-                            slidesToScroll: 2
+                            slidesToScroll: 1
                         }
                     },
                     {
-                        breakpoint: 970,
+                        breakpoint: 768,
                         settings: {
-                            slidesToShow: 2,
+                            slidesToShow: 1,
                             slidesToScroll: 1,
                         }
                     }
@@ -8628,10 +8628,10 @@
         let Slider4MaxSlidesChange;
         let width = $(window).width();
 
-        if (width < 750) {
+        if (width < 768) {
             Slider4MinSlidesChange = 1;
             Slider4MaxSlidesChange = 1;
-        } else if (width < 996) {
+        } else if (width < 992) {
             Slider4MinSlidesChange = 2;
             Slider4MaxSlidesChange = 2;
         } else {
@@ -8684,7 +8684,7 @@
             minSlidesChangeSlider6 = 1;
             maxSlidesChangeSilder6 = 1;
             controlerBoolean = true;
-        } else if (width < 745) {
+        } else if (width < 768) {
             minSlidesChangeSlider6 = 2;
             maxSlidesChangeSilder6 = 2;
         } else if (width < 977) {
